@@ -26,9 +26,9 @@ const menuItems = [
   { icon: <RequestQuote />, label: "Presupuestos", path: "/panel/budgets" },
   { icon: <CheckCircle />, label: "Aprobaciones", path: "/panel/approval-list" },
   { icon: <ShoppingCart />, label: "Compras", path: "/panel/purchases" },
-  { icon: <People />, label: "Personal", path: "/panel/staff" },
+  { icon: <People />, label: "Personal", path: "/panel/employee" },
   { icon: <BarChart />, label: "Reportes", path: "/panel/reports" },
-  { icon: <People />, label: "Clientes", path: "/panel/clients" },
+  { icon: <People />, label: "Clientes", path: "/panel/client" },
   { icon: <Settings />, label: "Configuración", path: "/panel/settings" },
 ];
 

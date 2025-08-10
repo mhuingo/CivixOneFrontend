@@ -12,6 +12,8 @@ import Panel from "./modules/Panel/Panel";
 import ProjectManagement from "./modules/Panel/ProjectManagement";
 import ApprovalList from "./modules/Panel/ApprovalList";
 import PrivateRoute from "./modules/Login/PrivateRoute";
+import Employee from "./modules/Panel/Employee";
+import Clients from "./modules/Panel/Client";
 
 // Importa tus páginas o vistas
 
@@ -26,6 +28,8 @@ export default function AppRoutes() {
             <Route index element={<ApprovalList />} />
             <Route path="approval-list" element={<ApprovalList />} />
             <Route path="project-management" element={<ProjectManagement />} />
+            <Route path="employee" element={<Employee />} />
+            <Route path="client" element={<Clients />} />
           </Route>
         </Route>
         {/* Redirección a home si no existe ruta */}

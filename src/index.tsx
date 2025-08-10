@@ -5,15 +5,20 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { AuthProvider } from "./modules/context/AuthContext";
 import AppRoutes from "./AppRoutes";
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import dayjs from "dayjs";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <AuthProvider>
-      <AppRoutes />
-    </AuthProvider>
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <AuthProvider>
+        <AppRoutes />
+      </AuthProvider>
+    </LocalizationProvider>
   </React.StrictMode>
 );
 
